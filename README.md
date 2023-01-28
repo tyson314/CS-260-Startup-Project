@@ -13,3 +13,11 @@ The idea I have for my web start up is a creative sandbox. When I say sandbox, I
 sand particles that fall to the ground and stack one on top of the other. By manipulating color and brush size, the user can make designs and patterns
 with the sand. There will be features that allow users to sign in, save their sand creations, load previous art, and share their sandbox with other users.
 There will be a browse gallery mechanic as well that allows you to view content from other artists!
+
+Key Features:
+Interactive Sand Art
+Changeable Color Palette
+Secure Sign In
+Save Designs on Web Server to Share or Access Later
+Send, View, and Download Work from Others
+
