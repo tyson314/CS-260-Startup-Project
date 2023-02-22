@@ -35,3 +35,13 @@ I figure it will be a lot harder to come up with an original work,
 but for the most part I understand what is going on in simon. The only 
 parts that are still confusing are the arbitraty IDs, the svg tags, 
 and what the numbers mean in the form section.
+
+Simon CSS
+I'm not going to lie this frameworks and CSS stuff has had me confused
+out of my mind. I'm not the artsy-est person in the world so I was really
+dreading making my startup look aesthetically pleasing. After going through
+the Simon code I'm still a little nervous, but I think I have a handle on how
+to use bootstrap now. The class declarations in the html part of things make
+more sense, like they are referencing premade CSS definitions elsewhere or 
+something. I am rethinking my startup idea though, I want to make something
+a little more structured and less interactive.
