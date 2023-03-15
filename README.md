@@ -56,3 +56,18 @@ a web page, it's not a systematical algorithm that is done only one way dependin
 on the input. It thrives of interactibility, something I have never really 
 done before. I am hoping the experienced I gained recoding Simon will help me
 with my own start-up.
+
+Startup HTML/CSS
+
+This was tough for me. An absolute monster of an assignment. However, I think I
+learned more toughing through this than any other programming assignment I've 
+done. I spent a lot of time reading about flex boxes and bootstrap tags, how
+they interact with each other, how to override them, etc. I also understand a
+how to structure an html file to be conducive to the kind of content you want
+to present. The trick is making an extra layer to be a flex container and then
+the elements inside are easier to manipulate. I had a lot of trouble with the 
+min-width attrubite so I ended up using extra media restrictions instead, and
+I think it turned out better! I haven't implemented my browse section yet 
+because I don't know what functionality I can implement simply with the back
+end connectivity part of things. However, it will be fast since I already know 
+how to do it.
