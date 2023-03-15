@@ -45,3 +45,14 @@ to use bootstrap now. The class declarations in the html part of things make
 more sense, like they are referencing premade CSS definitions elsewhere or 
 something. I am rethinking my startup idea though, I want to make something
 a little more structured and less interactive.
+
+Simon JavaScript
+JavaScript has been very hard for me to get the hang of. There seems to be
+too few rules it that makes sense. The fact that variables and parameters and 
+functions are so flexible make it really hard to code without a million bugs.
+That being said, this project has helped me see the versatility and power of 
+reassignable and storeable functions, especially those involved in promises. In 
+a web page, it's not a systematical algorithm that is done only one way depending
+on the input. It thrives of interactibility, something I have never really 
+done before. I am hoping the experienced I gained recoding Simon will help me
+with my own start-up.
