@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="veiwport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandsational</title>
+        <title>NBA Creator</title>
 
         <link rel="stylesheet" href="main.css" />
         
@@ -19,69 +19,53 @@
     </head>
 
     <body>
-        <header>
-            <div>
-                <nav>
-                    <a>Sandsational</a>
-                    <menu>
-                        <li>
-                            <a href="index.html">Draw</a>
-                        </li>
 
-                        <li>
-                          <a href="browse.html">Browse</a>
-                        </li>
-                        
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>                       
-                    </menu>
-                </nav>
-            </div>
-
-            <div>
-                <button type="button" class="btn btn-lg btn-primary">Sign In</button>
-                <div class="dropdown">
-                    <button class="btn btn-secondary btn-lg dropdown-toggle" 
-                        type="button" 
-                        id="dropdownMenuButton" 
-                        data-bs-toggle="dropdown" 
-                        aria-haspopup="true" 
-                        aria-expanded="false"
-                        >Options</button
-                    >
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Save</a>
-                        <a class="dropdown-item" href="#">Load</a>
-                        <a class="dropdown-item" href="#">Share</a>
+        <div class="container go-away">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-left mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="create.html" class="nav-link px-2 link-dark">Create</a></li>
+                    <li><a href="browse.html" class="nav-link px-2 link-dark">Browse</a></li>
+                </ul>
+                
+                <a href="/" class="d-flex align-items-center col-md-auto mb-2 mb-md-0 text-dark text-decoration-none">
+                    <h2>NBA Creator</h2>
+                </a>
+        
+                <div class="col-md-auto text-end d-flex flex-row justify-content-end">
+                    <button type="button" class="btn btn-primary me-2">Login</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" 
+                            type="button" 
+                            id="dropdownMenuButton" 
+                            data-bs-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false"
+                            >Options</button
+                        >
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Save</a>
+                            <a class="dropdown-item" href="#">Load</a>
+                            <a class="dropdown-item" href="#">Share</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
-        <main>
+        <main class="container-fluid text-center">
             <div>
-               <!--Color Pallete-->
-               <div>Red</div>
-               <div>Orange</div>
-               <div>Yellow</div>
-               <div>Green</div>
-               <div>Blue</div>
-               <div>Purple</div>
-               <div>Pink</div>
-               <div>Black</div>
-               <div>Gray</div>
-               <div>White</div>
-               <div>Brown</div>
-            </div>
-
-            <div>
-                <!--Work Space-->
-            </div>
+                <h1>Create your NBA Super Team!</h1>
+                <form method="get" action="create.html">
+                  <input type="text" id="name" placeholder="Your name here" />
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+              </div>
         </main>
 
-        <footer>
-            <div>
+        <footer class="bg-light text-muted text-dark">
+            <div class="container-fluid">
               <span class="text-reset">Author Name(s)</span>
               <a
                 class="text-reset"
