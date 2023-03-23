@@ -71,3 +71,13 @@ I think it turned out better! I haven't implemented my browse section yet
 because I don't know what functionality I can implement simply with the back
 end connectivity part of things. However, it will be fast since I already know 
 how to do it.
+
+Simon Service
+
+This was a really helpful assignment. It really breaks down how simple a service can
+really be by using the express package. It made handling post and get requests
+transform into a meager 3 or 4 lines. If anything this project made me understand how
+useful it can be to use other peoples code. Well don't take this the wrong way. I mean
+by downloading functional packages through the node.js methods or by using things like
+fetch. What would have taken me days to code on my own we included in just a few lines as
+well. Now I just need to decide how I will implement all of this in my start up project.
