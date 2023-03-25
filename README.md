@@ -81,3 +81,11 @@ useful it can be to use other peoples code. Well don't take this the wrong way. 
 by downloading functional packages through the node.js methods or by using things like
 fetch. What would have taken me days to code on my own we included in just a few lines as
 well. Now I just need to decide how I will implement all of this in my start up project.
+
+Simon MongoDB
+
+This project was kind of hard for me to wrap my head around. I think the environmental
+variables were a little tricky especially since I had to put them in two different
+places. It makes sense though that you don't want them physically in your code, a lot
+like protecting from SQL injection attacks. Overall very helpful and I think I know how I
+will implement this into my startup.
