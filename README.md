@@ -89,3 +89,14 @@ variables were a little tricky especially since I had to put them in two differe
 places. It makes sense though that you don't want them physically in your code, a lot
 like protecting from SQL injection attacks. Overall very helpful and I think I know how I
 will implement this into my startup.
+
+Startup Javascript
+
+I went from despising javascript at the beginning of this project to actually really
+enjoying it. The function based coding style really allows for you to make super
+generic code that can be applied in many situations. For example, my team changer and
+player changers use 90% of the same code but each function very independently of each
+other. I also think JSON is a really practical since it can be accessed through so many
+different mediums. Another thing I like about javascript is the versatility that comes
+built into arrays and objects. I essentially made a mini database of players, and used
+a class to instantiate teams, and arrays to keep track of which players were selected.
