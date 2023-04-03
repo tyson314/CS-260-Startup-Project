@@ -29,7 +29,7 @@ function loadTeams() {
       tableBodyEl.appendChild(rowEl);
     }
   } else {
-    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to score</td></tr>';
+    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to submit a team</td></tr>';
   }
 }
 
