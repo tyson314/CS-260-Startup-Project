@@ -26,7 +26,7 @@
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-left mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
                     <li><a href="create.html" class="nav-link px-2 link-dark">Create</a></li>
-                    <li><a href="browse.html" class="nav-link px-2 link-secondary">Browse</a></li>
+                    <li><a href="leaderboard.html" class="nav-link px-2 link-secondary">Leaderboard</a></li>
                 </ul>
                 
                 <a href="/" class="d-flex align-items-center col-md-auto mb-2 mb-md-0 text-dark text-decoration-none">
@@ -35,27 +35,27 @@
         
                 <div class="col-md-auto text-end d-flex flex-row justify-content-end">
                     <button type="button" class="btn btn-primary me-2">Login</button>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" 
-                            type="button" 
-                            id="dropdownMenuButton" 
-                            data-bs-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false"
-                            >Options</button
-                        >
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Save</a>
-                            <a class="dropdown-item" href="#">Load</a>
-                            <a class="dropdown-item" href="#">Share</a>
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-secondary me-2 disabled">Submit</button>
                 </div>
             </header>
         </div>
 
         <main class="container-fluid text-center">
-            
+            <main class="container-fluid text-center">
+                <table class="table table-warning table-striped-columns">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Team</th>
+                      <th>Power</th>
+                    </tr>
+                  </thead>
+                  <tbody id="teams"></tbody>
+                </table>
+                <button class="btn" onclick="localStorage.clear(); location.reload();">Reset</button>
+              </main>
+              
         </main>
 
         <footer class="bg-light text-muted text-dark">
@@ -68,6 +68,6 @@
               >
             </div>
         </footer>
-        
+        <script src="leaderboard.js"></script>
     </body>
 </html>

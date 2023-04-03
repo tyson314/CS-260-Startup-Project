@@ -70,3 +70,7 @@ footer {
     display: none;
   }
 }
+
+footer a {
+  float: right;
+}
