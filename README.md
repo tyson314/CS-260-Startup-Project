@@ -100,3 +100,14 @@ other. I also think JSON is a really practical since it can be accessed through 
 different mediums. Another thing I like about javascript is the versatility that comes
 built into arrays and objects. I essentially made a mini database of players, and used
 a class to instantiate teams, and arrays to keep track of which players were selected.
+
+Simon Login
+
+A lot of these concepts were pretty familiar because we dealt with them in 240. Something
+I thought was interesting and had never really crossed my mind is hashing the password
+before storing it into the database. It prevents information loss and a good hash 
+would be just as authentic as the original password. Something else I learned was how 
+to use the different service endpoints to log a user in. The Login and Create requests
+are intuitive but passing an authtoken to get certain types of data or authorization was
+an interesting concept. I will try and keep my implementation simple, but one day it would
+be cool to explore all the possibilities of authentication implementation.
