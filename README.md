@@ -111,3 +111,15 @@ to use the different service endpoints to log a user in. The Login and Create re
 are intuitive but passing an authtoken to get certain types of data or authorization was
 an interesting concept. I will try and keep my implementation simple, but one day it would
 be cool to explore all the possibilities of authentication implementation.
+
+Simon WebSocket
+
+I'm trying to figure out how useful webSocket will be to my startUp application. I don't have
+a ton of peer to peer communication so I might just have to make something up. I could 
+likely do something similar to what is found in this demonstration where you just announce
+the events of other players. It blows my mind that you can add so much functionality and
+communication with just a small source code. It is really important that you handle all the 
+connections effectively on coming in and out of your socket. I can only imagine the bugs that
+would show up if you had a wrong connection or you tried sending a message to a closed 
+connection.
+
