@@ -123,3 +123,15 @@ connections effectively on coming in and out of your socket. I can only imagine 
 would show up if you had a wrong connection or you tried sending a message to a closed 
 connection.
 
+Simon React
+
+This was an animal. I am very very very grateful we did not have to convert our entire startup
+project over to use react. This was very helpful to see how things worked. The routing makes
+a lot more sense not. Everything is using the same webpage, but essentially taken down and 
+reloaded when using the nav bar up top. I learned a lot about using the HTML and bootstrap
+in the JSX file. It is interesting that we use className, but it makes sense because it 
+is still javascript. It will be hard to recreate a lot of the logic that was originally so
+simple in javascript when using react, involving hooks and the works. While I was learning 
+about react in the unit I was confused about why anyone would want to use this instead of
+HTML, CSS, and javascript, but after seeing how smoothly the new simon application runs I 
+need no further convincing.
