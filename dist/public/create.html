@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NBA Creator</title>
+
+        <link rel="stylesheet" href="main.css" />
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <script src="create.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+      
+        <div class="container go-away">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-left mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
+                    <li><a href="create.html" class="nav-link px-2 link-secondary">Create</a></li>
+                    <li><a href="leaderboard.html" class="nav-link px-2 link-dark">Leaderboard</a></li>
+                </ul>
+                
+                <a href="/" class="d-flex align-items-center col-md-auto mb-2 mb-md-0 text-dark text-decoration-none">
+                    <h2 class="title">NBA Creator</h2>
+                </a>
+        
+                <div class="col-md-auto text-end d-flex flex-row justify-content-end">
+                    <button type="button" class="btn btn-primary me-2">Login</button>
+                    <button type="button" class="btn btn-secondary me-2" onclick="onSubmit()">Submit</button>
+                </div>
+            </header>
+        </div>
+
+        <main>
+          <div class="container no-squish">
+            <div class="row column-holder no-squish">
+              <div class="col-md-6 stretcher">
+                
+                <div class="players">
+                  Player:
+                  <span class="player-name"></span>
+                </div>
+                <h3 class="text-center">Choose Players</h3>
+                <br>
+                
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Team Name:</h5>
+                    <p id="teamnameleft">Team Name</p>
+                  </div>
+                  <button type="button" 
+                          class="btn btn-sm btn-primary me-2 swapper"
+                          onclick="changeTeam()">Swap</button>
+                </div>
+                
+                <br>
+
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Point Guard:</h5>
+                    <p id="pgInfo">Player Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                          class="btn btn-sm btn-primary me-2 swapper"
+                          onclick="changePlayer('pg')">Swap</button>
+                </div>
+
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Shooting Guard:</h5>
+                    <p id="sgInfo">Player Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                  class="btn btn-sm btn-primary me-2 swapper"
+                  onclick="changePlayer('sg')">Swap</button>                </div>
+
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Small Forward:</h5>
+                    <p id="sfInfo">Player Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                  class="btn btn-sm btn-primary me-2 swapper"
+                  onclick="changePlayer('sf')">Swap</button>                </div>
+
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Power Forward:</h5>
+                    <p id="pfInfo">Player Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                  class="btn btn-sm btn-primary me-2 swapper"
+                  onclick="changePlayer('pf')">Swap</button>                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Center:</h5>
+                    <p id="centerInfo">Player Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                  class="btn btn-sm btn-primary me-2 swapper"
+                  onclick="changePlayer('center')">Swap</button>                </div>
+
+                <br>
+
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <h5>Coach:</h5>
+                    <p id="coachInfo">Coach Name/Info/Stats</p>
+                  </div>
+                  <button type="button" 
+                  class="btn btn-sm btn-primary me-2 swapper"
+                  onclick="changePlayer('coach')">Swap</button>                </div>
+
+                <br/>
+
+              </div>
+
+              <div class="col-md-6 stretcher">
+
+                <br>
+
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="d-flex flex-row justify-content-around align-items-center">
+                    <div class="d-flex flex-column align-items-center">
+                      <h3 id="teamnameright" class="team-name">TEAM NAME</h3>
+                      <h4 id="teampower" class="team-power">Power: 0</h4>
+                    </div> 
+                    <img id="teampic" src="teamimage/spicysharks.jpeg" class="teampic">
+                  </div>
+
+                  <br>
+
+                  <div class="container">
+                    <div class="row">            
+
+                      <div class="col-sm-4">
+                        <div class="card" style="max-height: ;"">
+                          <div class="card-body d-flex flex-column">
+                            <img id="pgPic" src="playerimage/blankplayer.png">
+                            <p id="pgName" class="text-center">PG Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <img id="sgPic" src="playerimage/blankplayer.png">
+                            <p id="sgName"class="text-center">SG Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <img id="sfPic" src="playerimage/blankplayer.png">
+                            <p id="sfName" class="text-center">SF Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <br/>
+                    <div class="row">
+
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <img id="pfPic" src="playerimage/blankplayer.png">
+                            <p id="pfName" class="text-center">PF Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <img id="centerPic" src="playerimage/blankplayer.png">
+                            <p id="centerName" class="text-center">Center Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <img id="coachPic" src="playerimage/blankplayer.png">
+                            <p id="coachName" class="text-center">Coach Name</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </main>
+
+        <footer class="bg-light text-muted text-dark">
+            <div class="container-fluid justify-content-between">
+              <span class="text-reset">Author Name: Tyson Peterson</span>
+              <a
+                class="text-reset"
+                href="https://github.com/tyson314/CS-260-Startup-Project.git"
+                >Source</a
+              >
+            </div>
+        </footer>
+        
+        <script src="create.js"></script>
+    </body>
+</html>
