@@ -100,3 +100,38 @@ other. I also think JSON is a really practical since it can be accessed through 
 different mediums. Another thing I like about javascript is the versatility that comes
 built into arrays and objects. I essentially made a mini database of players, and used
 a class to instantiate teams, and arrays to keep track of which players were selected.
+
+Simon Login
+
+A lot of these concepts were pretty familiar because we dealt with them in 240. Something
+I thought was interesting and had never really crossed my mind is hashing the password
+before storing it into the database. It prevents information loss and a good hash 
+would be just as authentic as the original password. Something else I learned was how 
+to use the different service endpoints to log a user in. The Login and Create requests
+are intuitive but passing an authtoken to get certain types of data or authorization was
+an interesting concept. I will try and keep my implementation simple, but one day it would
+be cool to explore all the possibilities of authentication implementation.
+
+Simon WebSocket
+
+I'm trying to figure out how useful webSocket will be to my startUp application. I don't have
+a ton of peer to peer communication so I might just have to make something up. I could 
+likely do something similar to what is found in this demonstration where you just announce
+the events of other players. It blows my mind that you can add so much functionality and
+communication with just a small source code. It is really important that you handle all the 
+connections effectively on coming in and out of your socket. I can only imagine the bugs that
+would show up if you had a wrong connection or you tried sending a message to a closed 
+connection.
+
+Simon React
+
+This was an animal. I am very very very grateful we did not have to convert our entire startup
+project over to use react. This was very helpful to see how things worked. The routing makes
+a lot more sense not. Everything is using the same webpage, but essentially taken down and 
+reloaded when using the nav bar up top. I learned a lot about using the HTML and bootstrap
+in the JSX file. It is interesting that we use className, but it makes sense because it 
+is still javascript. It will be hard to recreate a lot of the logic that was originally so
+simple in javascript when using react, involving hooks and the works. While I was learning 
+about react in the unit I was confused about why anyone would want to use this instead of
+HTML, CSS, and javascript, but after seeing how smoothly the new simon application runs I 
+need no further convincing.
