@@ -1,5 +1,11 @@
-Package teams from create and send to leaderboard
+Fetch (player stats?)
 
-Create leaderboard screen
+DataBase
+
+Login
+-fix your html to take a password
+-fix your js to force use to log in
+
+WebSocket (announce when players submit a team)
 
 SUBMIT

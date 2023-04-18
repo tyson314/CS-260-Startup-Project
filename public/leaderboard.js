@@ -1,9 +1,24 @@
-function loadTeams() {
+async function loadTeams() {
   let teams = [];
-  const teamsText = localStorage.getItem('leaderboard');
-  if (teamsText) {
-    teams = JSON.parse(teamsText);
+
+
+  try {
+
+    const response = await fetch('/api/teams');
+    teams = await response.json();
+   
+  } catch { 
+
+   const teamsText = localStorage.getItem('leaderboard');
+   if (teamsText) {
+     teams = JSON.parse(teamsText);
+   }
   }
+
+   const teamsText = localStorage.getItem('leaderboard');
+   if (teamsText) {
+     teams = JSON.parse(teamsText);
+   }
 
   const tableBodyEl = document.querySelector('#teams');
 

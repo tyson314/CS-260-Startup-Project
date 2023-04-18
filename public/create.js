@@ -166,35 +166,51 @@ class FinishedTeam {
     this.teamName = teamName;
   }
 }
-function onSubmit() {
-  teamToSubmit = new FinishedTeam(ballPlayers[usedPlayers.pg].name, ballPlayers[usedPlayers.sg].name,
-    ballPlayers[usedPlayers.sf].name, ballPlayers[usedPlayers.pf].name, ballPlayers[usedPlayers.center].name,
-    ballPlayers[usedPlayers.coach].name,teamPower, userName, teamNames[usedTeam].name);
+async function onSubmit() {
+    teamToSubmit = new FinishedTeam(ballPlayers[usedPlayers.pg].name, ballPlayers[usedPlayers.sg].name,
+      ballPlayers[usedPlayers.sf].name, ballPlayers[usedPlayers.pf].name, ballPlayers[usedPlayers.center].name,
+      ballPlayers[usedPlayers.coach].name,teamPower, userName, teamNames[usedTeam].name);
+      
+    console.log(JSON.stringify(teamToSubmit));
   
-  let createdTeams = [];
-  const createdTeamsJSON = localStorage.getItem('leaderboard');
-  if (createdTeamsJSON) {
-    createdTeams = JSON.parse(createdTeamsJSON);
-  }
-  
-  let found = false;
-  for (const [i, prevScore] of createdTeams.entries()) {
-    console.log()
-    if (teamToSubmit.power > prevScore.power) {
-      createdTeams.splice(i, 0, teamToSubmit);
-      found = true;
-      break;
+    try {
+      const response = await fetch('/api/team', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(teamToSubmit),
+      });
+
+      //const scores = await response.json();
+      //localStorage.setItem('leaderboard', JSON.stringify(scores));
+    } catch {
+
+      let createdTeams = [];
+      const createdTeamsJSON = localStorage.getItem('leaderboard');
+      if (createdTeamsJSON) {
+        createdTeams = JSON.parse(createdTeamsJSON);
+      }
+      
+      let found = false;
+      for (const [i, prevScore] of createdTeams.entries()) {
+        console.log()
+        if (teamToSubmit.power > prevScore.power) {
+          createdTeams.splice(i, 0, teamToSubmit);
+          found = true;
+          break;
+        }
+      }
+    
+      if (!found) {
+        createdTeams.push(teamToSubmit);
+      }
+    
+      if (createdTeams.length > 10) {
+        createdTeams.length = 10;
+      }
     }
-  }
 
-  if (!found) {
-    createdTeams.push(teamToSubmit);
-  }
 
-  if (createdTeams.length > 10) {
-    createdTeams.length = 10;
-  }
 
   localStorage.setItem('leaderboard', JSON.stringify(createdTeams));
-  window.location.href = "leaderboard.html";
+  //window.location.href = "leaderboard.html";
 }
