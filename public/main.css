@@ -10,7 +10,7 @@ header {
 }
 
 main {
-  flex: 1 calc(100vh - 180px);
+  flex: 1 calc(100vh - 167px);
   display: flex;
   flex-direction: column;
   align-items: center;
