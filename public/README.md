@@ -100,3 +100,38 @@ other. I also think JSON is a really practical since it can be accessed through 
 different mediums. Another thing I like about javascript is the versatility that comes
 built into arrays and objects. I essentially made a mini database of players, and used
 a class to instantiate teams, and arrays to keep track of which players were selected.
+
+Simon React
+
+This was super interesting to go through. I was always curious about how other websites
+operate so smoothly even though it looks like you are passing to new pages. The syntax
+for react is pretty difficult, especially since my brain is absolutely melted from 
+learning 5 new coding languages this semester. I understand how the HTML injection
+works because it is pretty similar to javascript but on steroids. It's crazy how the 
+entire site can be injected. The router was super interesting too. I think it would be
+very difficult to implement react on my startup because I would have to completely 
+redo a lot of my HTML and javascript, so thank you Professor Jensen :)
+
+Startup Service
+
+I did it! Mostly. I'm not sure how I want to implement the websocket and I'm running
+out of time, but all the other services are functional and I couldn't be prouder! 
+
+--Pulled player stats from a fetch web API
+--Made the generated teams be persistent by get and set API calls
+--Stored login information and team stats in the MongoDB database
+--Authenticated login credentials
+
+It was a little easier to be creative on unique implementations of the service endpoints
+and the Database and the fetch since the implementation was a bit easier, but for the 
+Login authentication I had to rely pretty heavily on the Simon code. However, I had
+to tweak it just enough that I needed to thouroughly understand how that code worked
+in and out in order for my site to work. I thought my NBA API was pretty applicable, 
+and it fits pretty well on the front page. I had a good time searching the web for 
+interesting APIs and the resources are absolutely VAST. The database code was giving
+me a lot of grief. I forget to make the function calls in my index.js asynchronous
+and I could not for the life of me figure out what was going on, but when I fixed it
+it made a lot of sense why it needed to be like that. The login code is so deep, I 
+am definitely going to be referencing this project over and over again in the future
+if I ever do something similar. Honestly, my head feels like it is going to pop. This
+class has been tough. Especially being 100% online. I think I've grown a lot though.
