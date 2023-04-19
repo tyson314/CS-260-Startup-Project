@@ -170,9 +170,9 @@ async function onSubmit() {
     teamToSubmit = new FinishedTeam(ballPlayers[usedPlayers.pg].name, ballPlayers[usedPlayers.sg].name,
       ballPlayers[usedPlayers.sf].name, ballPlayers[usedPlayers.pf].name, ballPlayers[usedPlayers.center].name,
       ballPlayers[usedPlayers.coach].name,teamPower, userName, teamNames[usedTeam].name);
-      
+
     console.log(JSON.stringify(teamToSubmit));
-  
+  let createdTeams = [];
     try {
       const response = await fetch('/api/team', {
         method: 'POST',
@@ -180,11 +180,12 @@ async function onSubmit() {
         body: JSON.stringify(teamToSubmit),
       });
 
-      //const scores = await response.json();
+      const teams = await response.json();
+      console.log(JSON.stringify(teams));
       //localStorage.setItem('leaderboard', JSON.stringify(scores));
     } catch {
 
-      let createdTeams = [];
+      
       const createdTeamsJSON = localStorage.getItem('leaderboard');
       if (createdTeamsJSON) {
         createdTeams = JSON.parse(createdTeamsJSON);

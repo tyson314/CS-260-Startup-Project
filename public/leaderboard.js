@@ -6,7 +6,7 @@ async function loadTeams() {
 
     const response = await fetch('/api/teams');
     teams = await response.json();
-   
+    console.log(teams);
   } catch { 
 
    const teamsText = localStorage.getItem('leaderboard');
@@ -14,11 +14,6 @@ async function loadTeams() {
      teams = JSON.parse(teamsText);
    }
   }
-
-   const teamsText = localStorage.getItem('leaderboard');
-   if (teamsText) {
-     teams = JSON.parse(teamsText);
-   }
 
   const tableBodyEl = document.querySelector('#teams');
 
