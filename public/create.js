@@ -213,5 +213,11 @@ async function onSubmit() {
 
 
   localStorage.setItem('leaderboard', JSON.stringify(createdTeams));
-  //window.location.href = "leaderboard.html";
+  window.location.href = "leaderboard.html";
+}
+
+function logout() {
+  fetch(`/api/auth/logout`, {
+    method: 'delete',
+  }).then(() => (window.location.href = '/'));
 }
